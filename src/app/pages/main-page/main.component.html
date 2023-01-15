@@ -1,0 +1,8 @@
+<ng-container *ngIf="(portalComponent$ | async) as portalComponent">
+  <app-article [articles$]="articles$"></app-article>
+  <button
+    type="button"
+    class="btn"
+    (click)="onOpenModal(portalComponent)">Show products search</button>
+</ng-container>
+

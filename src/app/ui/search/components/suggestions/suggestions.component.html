@@ -1,0 +1,11 @@
+<ul
+  class="suggestions">
+  <li
+    *ngFor="let product of products"
+    class="suggestion"
+    (click)="onSelectOption(labelHandler(product))"
+    >
+    <p
+      class="suggestion-text">{{ labelHandler(product) }}</p>
+  </li>
+</ul>

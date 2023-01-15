@@ -1,0 +1,14 @@
+<ng-container *ngIf="articles$ | async as articles">
+  <section>
+    <article
+      *ngFor="let article of articles"
+      class="article">
+      <div class="article-header">
+        <h2 class="article-title">{{ article.title }}</h2>
+      </div>
+      <div class="article-body">
+        <p class="article-desc">{{ article.description }}</p>
+      </div>
+    </article>
+  </section>
+</ng-container>

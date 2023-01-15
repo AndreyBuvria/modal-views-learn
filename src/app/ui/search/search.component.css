@@ -1,0 +1,73 @@
+
+
+.search-modal-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(1, 1, 1, 0.79);
+  z-index: 200;
+}
+
+
+.search-modal-wrap {
+  position: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.search-modal {
+  width: 400px;
+  height: 400px;
+  border-radius: 6px;
+  background: #fff;
+}
+.search-modal-control {
+  padding: 0 12px;
+}
+.search-modal-title {
+  text-align: center;
+  padding: 12px 4px;
+}
+.search-modal-label {
+  display: block;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid rgba(48, 48, 48, 0.268);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+.search-input:focus {
+  border: 1px solid rgba(48, 48, 48, 0.682);
+}
+.search-modal-submit {
+  padding: 0 18px;
+  margin-top: 12px;
+}
+
+.btn {
+  padding: 10px 18px;
+  width: 100%;
+  margin: 0;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-bottom: 6px;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn-submit {
+  background: rgb(94, 82, 255);
+}

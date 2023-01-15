@@ -1,0 +1,17 @@
+section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.article {
+  margin-top: 20px;
+}
+
+.article-body {
+  padding: 12px 0;
+}
+.article-desc {
+  max-width: 500px;
+  white-space: break-spaces;
+}

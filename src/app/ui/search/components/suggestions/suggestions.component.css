@@ -1,0 +1,18 @@
+.suggestions {
+  padding: 0 6px;
+  max-height: 200px;
+  overflow: auto;
+}
+.suggestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  border: 1px solid rgba(48, 48, 48, 0.099);
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.suggestion-text {
+  font-size: 16px;
+}
+

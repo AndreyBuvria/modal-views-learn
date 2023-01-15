@@ -1,0 +1,30 @@
+<div class="search-modal-overlay">
+  <div class="search-modal-wrap">
+    <div class="search-modal">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="search-modal-control">
+          <h2 class="search-modal-title">Search</h2>
+          <label class="search-modal-label" for="inp">
+            <input
+              type="search"
+              id="inp"
+              class="search-input"
+              [formControl]="searchInput">
+          </label>
+          <ng-container *ngIf="visible && (products$ | async) as products">
+            <search-suggestions
+              [data]="products"
+              [inputValue]="searchInputValue"
+              (inputValueChange)="onSelectSuggestion($event)"></search-suggestions>
+          </ng-container>
+        </div>
+        <div class="search-modal-submit">
+          <button type="submit" class="btn btn-submit">Submit</button>
+          <button type="button" class="btn btn-close" (click)="onClose()">Close</button>
+        </div>
+        <p style="margin-left: 20px;">Search value: {{ searchInputValue }}</p>
+      </form>
+    </div>
+  </div>
+</div>
+
